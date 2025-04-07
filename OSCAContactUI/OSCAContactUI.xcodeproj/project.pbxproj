@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1139EFE828C9C7AB0050FAD4 /* ContactFormFlow+OSCADeeplinkHandeble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139EFE728C9C7AB0050FAD4 /* ContactFormFlow+OSCADeeplinkHandeble.swift */; };
+		1139F00D28C9D9310050FAD4 /* ContactFormDI+DeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139F00C28C9D9310050FAD4 /* ContactFormDI+DeeplinkHandler.swift */; };
+		F74B892C28BCF0C000B3EFAE /* OSCAContactUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74B892128BCF0C000B3EFAE /* OSCAContactUI.framework */; };
+		F74B893128BCF0C000B3EFAE /* OSCAContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B893028BCF0C000B3EFAE /* OSCAContactUITests.swift */; };
+		F74B893228BCF0C000B3EFAE /* OSCAContactUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F74B892428BCF0C000B3EFAE /* OSCAContactUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74B896828BCF21F00B3EFAE /* OSCAContactUIDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B894028BCF21E00B3EFAE /* OSCAContactUIDIContainer.swift */; };
+		F74B896928BCF21F00B3EFAE /* OSCAContactPrivacyPolicyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B894328BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewModel.swift */; };
+		F74B896A28BCF21F00B3EFAE /* OSCAContactPrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B894528BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewController.swift */; };
+		F74B896B28BCF21F00B3EFAE /* OSCAContactPrivacyPolicyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B894728BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewController.storyboard */; };
+		F74B896C28BCF21F00B3EFAE /* OSCAContactFormFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B894928BCF21E00B3EFAE /* OSCAContactFormFlowCoordinator.swift */; };
+		F74B896D28BCF21F00B3EFAE /* OSCAContactUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B894A28BCF21E00B3EFAE /* OSCAContactUI.swift */; };
+		F74B896F28BCF21F00B3EFAE /* OSCAContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B894E28BCF21F00B3EFAE /* OSCAContactFormViewModel.swift */; };
+		F74B897028BCF21F00B3EFAE /* OSCAContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B895028BCF21F00B3EFAE /* OSCAContactFormViewController.swift */; };
+		F74B897128BCF21F00B3EFAE /* OSCAContactFormViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B895228BCF21F00B3EFAE /* OSCAContactFormViewController.storyboard */; };
+		F74B897628BCF21F00B3EFAE /* OSCAContactPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B895A28BCF21F00B3EFAE /* OSCAContactPickerViewModel.swift */; };
+		F74B897728BCF21F00B3EFAE /* OSCAContactPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B895C28BCF21F00B3EFAE /* OSCAContactPickerViewController.swift */; };
+		F74B897828BCF21F00B3EFAE /* OSCAContactPickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B895E28BCF21F00B3EFAE /* OSCAContactPickerViewController.storyboard */; };
+		F74B897928BCF21F00B3EFAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74B896028BCF21F00B3EFAE /* Localizable.strings */; };
+		F7F0196A28BCF374003FEBCB /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = F7F0196928BCF374003FEBCB /* SkyFloatingLabelTextField */; };
+		F7F0196D28BCF384003FEBCB /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F0196C28BCF384003FEBCB /* OSCAEssentials.framework */; };
+		F7F0196E28BCF384003FEBCB /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7F0196C28BCF384003FEBCB /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7F0197128BCF38A003FEBCB /* OSCANetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F0197028BCF38A003FEBCB /* OSCANetworkService.framework */; };
+		F7F0197228BCF38A003FEBCB /* OSCANetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7F0197028BCF38A003FEBCB /* OSCANetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7F0197428BCF39B003FEBCB /* OSCAContact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F0197328BCF39B003FEBCB /* OSCAContact.framework */; };
+		F7F0197528BCF39B003FEBCB /* OSCAContact.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7F0197328BCF39B003FEBCB /* OSCAContact.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7F0197E28BCF757003FEBCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7F0197C28BCF757003FEBCB /* Localizable.strings */; };
+		F7F0198128BCF773003FEBCB /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7F0197F28BCF773003FEBCB /* API_Develop.plist */; };
+		F7F0198228BCF773003FEBCB /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7F0198028BCF773003FEBCB /* API_Release.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F74B892D28BCF0C000B3EFAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74B891828BCF0C000B3EFAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F74B892028BCF0C000B3EFAE;
+			remoteInfo = OSCAContactUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7F0196F28BCF384003FEBCB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F7F0196E28BCF384003FEBCB /* OSCAEssentials.framework in Embed Frameworks */,
+				F7F0197528BCF39B003FEBCB /* OSCAContact.framework in Embed Frameworks */,
+				F7F0197228BCF38A003FEBCB /* OSCANetworkService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1139EFE728C9C7AB0050FAD4 /* ContactFormFlow+OSCADeeplinkHandeble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactFormFlow+OSCADeeplinkHandeble.swift"; sourceTree = "<group>"; };
+		1139F00C28C9D9310050FAD4 /* ContactFormDI+DeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactFormDI+DeeplinkHandler.swift"; sourceTree = "<group>"; };
+		11D323B028C0B017001C5016 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		11D323B128C0B017001C5016 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		F74B892128BCF0C000B3EFAE /* OSCAContactUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCAContactUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74B892428BCF0C000B3EFAE /* OSCAContactUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCAContactUI.h; sourceTree = "<group>"; };
+		F74B892B28BCF0C000B3EFAE /* OSCAContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCAContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74B893028BCF0C000B3EFAE /* OSCAContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAContactUITests.swift; sourceTree = "<group>"; };
+		F74B894028BCF21E00B3EFAE /* OSCAContactUIDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactUIDIContainer.swift; sourceTree = "<group>"; };
+		F74B894328BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactPrivacyPolicyViewModel.swift; sourceTree = "<group>"; };
+		F74B894528BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactPrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		F74B894728BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OSCAContactPrivacyPolicyViewController.storyboard; sourceTree = "<group>"; };
+		F74B894928BCF21E00B3EFAE /* OSCAContactFormFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactFormFlowCoordinator.swift; sourceTree = "<group>"; };
+		F74B894A28BCF21E00B3EFAE /* OSCAContactUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactUI.swift; sourceTree = "<group>"; };
+		F74B894E28BCF21F00B3EFAE /* OSCAContactFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactFormViewModel.swift; sourceTree = "<group>"; };
+		F74B895028BCF21F00B3EFAE /* OSCAContactFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactFormViewController.swift; sourceTree = "<group>"; };
+		F74B895228BCF21F00B3EFAE /* OSCAContactFormViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OSCAContactFormViewController.storyboard; sourceTree = "<group>"; };
+		F74B895A28BCF21F00B3EFAE /* OSCAContactPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactPickerViewModel.swift; sourceTree = "<group>"; };
+		F74B895C28BCF21F00B3EFAE /* OSCAContactPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactPickerViewController.swift; sourceTree = "<group>"; };
+		F74B895E28BCF21F00B3EFAE /* OSCAContactPickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OSCAContactPickerViewController.storyboard; sourceTree = "<group>"; };
+		F74B896128BCF21F00B3EFAE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F74B896328BCF21F00B3EFAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F74B897C28BCF23300B3EFAE /* OSCAContactUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSCAContactUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F74B897D28BCF23300B3EFAE /* OSCAContactUILocalizationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAContactUILocalizationTests.swift; sourceTree = "<group>"; };
+		F7F0196C28BCF384003FEBCB /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F0197028BCF38A003FEBCB /* OSCANetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCANetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F0197328BCF39B003FEBCB /* OSCAContact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAContact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F0197D28BCF757003FEBCB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7F0197F28BCF773003FEBCB /* API_Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Develop.plist; path = ../../../../../SupportingFiles/API_Develop.plist; sourceTree = "<group>"; };
+		F7F0198028BCF773003FEBCB /* API_Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Release.plist; path = ../../../../../SupportingFiles/API_Release.plist; sourceTree = "<group>"; };
+		F7F0198328BCF7A4003FEBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F0198428BCF7C1003FEBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F74B891E28BCF0C000B3EFAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F0196A28BCF374003FEBCB /* SkyFloatingLabelTextField in Frameworks */,
+				F7F0196D28BCF384003FEBCB /* OSCAEssentials.framework in Frameworks */,
+				F7F0197128BCF38A003FEBCB /* OSCANetworkService.framework in Frameworks */,
+				F7F0197428BCF39B003FEBCB /* OSCAContact.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74B892828BCF0C000B3EFAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74B892C28BCF0C000B3EFAE /* OSCAContactUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D323AE28C0AFC0001C5016 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11D323B128C0B017001C5016 /* Development.xcconfig */,
+				11D323B028C0B017001C5016 /* Production.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F74B891728BCF0C000B3EFAE = {
+			isa = PBXGroup;
+			children = (
+				F74B892328BCF0C000B3EFAE /* OSCAContactUI */,
+				F74B892F28BCF0C000B3EFAE /* OSCAContactUITests */,
+				F74B892228BCF0C000B3EFAE /* Products */,
+				F7F0196B28BCF384003FEBCB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F74B892228BCF0C000B3EFAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F74B892128BCF0C000B3EFAE /* OSCAContactUI.framework */,
+				F74B892B28BCF0C000B3EFAE /* OSCAContactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F74B892328BCF0C000B3EFAE /* OSCAContactUI */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895328BCF21F00B3EFAE /* Deeplink */,
+				F74B894C28BCF21F00B3EFAE /* ContactForm */,
+				F74B895828BCF21F00B3EFAE /* ContactPicker */,
+				F74B894128BCF21E00B3EFAE /* ContactPrivacyPolicy */,
+				F74B894828BCF21E00B3EFAE /* Flows */,
+				F74B895F28BCF21F00B3EFAE /* Resources */,
+				11D323AE28C0AFC0001C5016 /* SupportingFiles */,
+				F7F0198328BCF7A4003FEBCB /* Info.plist */,
+				F74B892428BCF0C000B3EFAE /* OSCAContactUI.h */,
+				F74B894A28BCF21E00B3EFAE /* OSCAContactUI.swift */,
+				F74B894028BCF21E00B3EFAE /* OSCAContactUIDIContainer.swift */,
+			);
+			path = OSCAContactUI;
+			sourceTree = "<group>";
+		};
+		F74B892F28BCF0C000B3EFAE /* OSCAContactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7F0197B28BCF757003FEBCB /* Resources */,
+				F74B897D28BCF23300B3EFAE /* OSCAContactUILocalizationTests.swift */,
+				F74B893028BCF0C000B3EFAE /* OSCAContactUITests.swift */,
+				F7F0198428BCF7C1003FEBCB /* Info.plist */,
+				F74B897C28BCF23300B3EFAE /* OSCAContactUITests-Bridging-Header.h */,
+			);
+			path = OSCAContactUITests;
+			sourceTree = "<group>";
+		};
+		F74B894128BCF21E00B3EFAE /* ContactPrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894228BCF21E00B3EFAE /* ViewModel */,
+				F74B894428BCF21E00B3EFAE /* Controller */,
+				F74B894628BCF21E00B3EFAE /* View */,
+			);
+			path = ContactPrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		F74B894228BCF21E00B3EFAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894328BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F74B894428BCF21E00B3EFAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894528BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F74B894628BCF21E00B3EFAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894728BCF21E00B3EFAE /* OSCAContactPrivacyPolicyViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F74B894828BCF21E00B3EFAE /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894928BCF21E00B3EFAE /* OSCAContactFormFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		F74B894C28BCF21F00B3EFAE /* ContactForm */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894D28BCF21F00B3EFAE /* ViewModel */,
+				F74B894F28BCF21F00B3EFAE /* Controller */,
+				F74B895128BCF21F00B3EFAE /* View */,
+			);
+			path = ContactForm;
+			sourceTree = "<group>";
+		};
+		F74B894D28BCF21F00B3EFAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F74B894E28BCF21F00B3EFAE /* OSCAContactFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F74B894F28BCF21F00B3EFAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895028BCF21F00B3EFAE /* OSCAContactFormViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F74B895128BCF21F00B3EFAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895228BCF21F00B3EFAE /* OSCAContactFormViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F74B895328BCF21F00B3EFAE /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				1139EFE728C9C7AB0050FAD4 /* ContactFormFlow+OSCADeeplinkHandeble.swift */,
+				1139F00C28C9D9310050FAD4 /* ContactFormDI+DeeplinkHandler.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		F74B895828BCF21F00B3EFAE /* ContactPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895928BCF21F00B3EFAE /* ViewModel */,
+				F74B895B28BCF21F00B3EFAE /* Controller */,
+				F74B895D28BCF21F00B3EFAE /* View */,
+			);
+			path = ContactPicker;
+			sourceTree = "<group>";
+		};
+		F74B895928BCF21F00B3EFAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895A28BCF21F00B3EFAE /* OSCAContactPickerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F74B895B28BCF21F00B3EFAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895C28BCF21F00B3EFAE /* OSCAContactPickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F74B895D28BCF21F00B3EFAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F74B895E28BCF21F00B3EFAE /* OSCAContactPickerViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F74B895F28BCF21F00B3EFAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F74B896028BCF21F00B3EFAE /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7F0196B28BCF384003FEBCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7F0197328BCF39B003FEBCB /* OSCAContact.framework */,
+				F7F0197028BCF38A003FEBCB /* OSCANetworkService.framework */,
+				F7F0196C28BCF384003FEBCB /* OSCAEssentials.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7F0197B28BCF757003FEBCB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7F0197F28BCF773003FEBCB /* API_Develop.plist */,
+				F7F0198028BCF773003FEBCB /* API_Release.plist */,
+				F7F0197C28BCF757003FEBCB /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F74B891C28BCF0C000B3EFAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74B893228BCF0C000B3EFAE /* OSCAContactUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F74B892028BCF0C000B3EFAE /* OSCAContactUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74B893528BCF0C000B3EFAE /* Build configuration list for PBXNativeTarget "OSCAContactUI" */;
+			buildPhases = (
+				F74B891C28BCF0C000B3EFAE /* Headers */,
+				F74B891D28BCF0C000B3EFAE /* Sources */,
+				F74B891E28BCF0C000B3EFAE /* Frameworks */,
+				F74B891F28BCF0C000B3EFAE /* Resources */,
+				F7F0196F28BCF384003FEBCB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCAContactUI;
+			packageProductDependencies = (
+				F7F0196928BCF374003FEBCB /* SkyFloatingLabelTextField */,
+			);
+			productName = OSCAContactUI;
+			productReference = F74B892128BCF0C000B3EFAE /* OSCAContactUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F74B892A28BCF0C000B3EFAE /* OSCAContactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74B893828BCF0C000B3EFAE /* Build configuration list for PBXNativeTarget "OSCAContactUITests" */;
+			buildPhases = (
+				F74B892728BCF0C000B3EFAE /* Sources */,
+				F74B892828BCF0C000B3EFAE /* Frameworks */,
+				F74B892928BCF0C000B3EFAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F74B892E28BCF0C000B3EFAE /* PBXTargetDependency */,
+			);
+			name = OSCAContactUITests;
+			productName = OSCAContactUITests;
+			productReference = F74B892B28BCF0C000B3EFAE /* OSCAContactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F74B891828BCF0C000B3EFAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F74B892028BCF0C000B3EFAE = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					F74B892A28BCF0C000B3EFAE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F74B891B28BCF0C000B3EFAE /* Build configuration list for PBXProject "OSCAContactUI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = F74B891728BCF0C000B3EFAE;
+			packageReferences = (
+				F7F0196828BCF374003FEBCB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+			);
+			productRefGroup = F74B892228BCF0C000B3EFAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F74B892028BCF0C000B3EFAE /* OSCAContactUI */,
+				F74B892A28BCF0C000B3EFAE /* OSCAContactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F74B891F28BCF0C000B3EFAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74B897828BCF21F00B3EFAE /* OSCAContactPickerViewController.storyboard in Resources */,
+				F74B897128BCF21F00B3EFAE /* OSCAContactFormViewController.storyboard in Resources */,
+				F74B897928BCF21F00B3EFAE /* Localizable.strings in Resources */,
+				F74B896B28BCF21F00B3EFAE /* OSCAContactPrivacyPolicyViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74B892928BCF0C000B3EFAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F0198228BCF773003FEBCB /* API_Release.plist in Resources */,
+				F7F0197E28BCF757003FEBCB /* Localizable.strings in Resources */,
+				F7F0198128BCF773003FEBCB /* API_Develop.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F74B891D28BCF0C000B3EFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74B897028BCF21F00B3EFAE /* OSCAContactFormViewController.swift in Sources */,
+				F74B897628BCF21F00B3EFAE /* OSCAContactPickerViewModel.swift in Sources */,
+				F74B896A28BCF21F00B3EFAE /* OSCAContactPrivacyPolicyViewController.swift in Sources */,
+				F74B896D28BCF21F00B3EFAE /* OSCAContactUI.swift in Sources */,
+				F74B896C28BCF21F00B3EFAE /* OSCAContactFormFlowCoordinator.swift in Sources */,
+				F74B896928BCF21F00B3EFAE /* OSCAContactPrivacyPolicyViewModel.swift in Sources */,
+				F74B896828BCF21F00B3EFAE /* OSCAContactUIDIContainer.swift in Sources */,
+				F74B896F28BCF21F00B3EFAE /* OSCAContactFormViewModel.swift in Sources */,
+				F74B897728BCF21F00B3EFAE /* OSCAContactPickerViewController.swift in Sources */,
+				1139EFE828C9C7AB0050FAD4 /* ContactFormFlow+OSCADeeplinkHandeble.swift in Sources */,
+				1139F00D28C9D9310050FAD4 /* ContactFormDI+DeeplinkHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74B892728BCF0C000B3EFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74B893128BCF0C000B3EFAE /* OSCAContactUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F74B892E28BCF0C000B3EFAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F74B892028BCF0C000B3EFAE /* OSCAContactUI */;
+			targetProxy = F74B892D28BCF0C000B3EFAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F74B896028BCF21F00B3EFAE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F74B896128BCF21F00B3EFAE /* de */,
+				F74B896328BCF21F00B3EFAE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F7F0197C28BCF757003FEBCB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F0197D28BCF757003FEBCB /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F74B893328BCF0C000B3EFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D323B128C0B017001C5016 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F74B893428BCF0C000B3EFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D323B028C0B017001C5016 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74B893628BCF0C000B3EFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D323B128C0B017001C5016 /* Development.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAContactUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.contact.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F74B893728BCF0C000B3EFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D323B028C0B017001C5016 /* Production.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAContactUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.contact.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F74B893928BCF0C000B3EFAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D323B128C0B017001C5016 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAContactUITests/Info.plist;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.contact.ui.OSCAContactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F74B893A28BCF0C000B3EFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D323B028C0B017001C5016 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAContactUITests/Info.plist;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.contact.ui.OSCAContactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F74B891B28BCF0C000B3EFAE /* Build configuration list for PBXProject "OSCAContactUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74B893328BCF0C000B3EFAE /* Debug */,
+				F74B893428BCF0C000B3EFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74B893528BCF0C000B3EFAE /* Build configuration list for PBXNativeTarget "OSCAContactUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74B893628BCF0C000B3EFAE /* Debug */,
+				F74B893728BCF0C000B3EFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74B893828BCF0C000B3EFAE /* Build configuration list for PBXNativeTarget "OSCAContactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74B893928BCF0C000B3EFAE /* Debug */,
+				F74B893A28BCF0C000B3EFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7F0196828BCF374003FEBCB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7F0196928BCF374003FEBCB /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7F0196828BCF374003FEBCB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F74B891828BCF0C000B3EFAE /* Project object */;
+}

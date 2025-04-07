@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Picker View Controller-->
+        <scene sceneID="awV-E6-2Qr">
+            <objects>
+                <viewController storyboardIdentifier="OSCAContactPickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hYq-RL-9Ok" customClass="OSCAContactPickerViewController" customModule="OSCAContactUI" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="JbF-Oy-OG2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adJ-yM-7Yv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RAS-Xd-hRg" appends="YES" id="phY-5v-5HK"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwq-Sc-W73">
+                                <rect key="frame" x="0.0" y="600" width="414" height="262"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNu-xX-xiE">
+                                        <rect key="frame" x="16" y="8" width="76" height="30"/>
+                                        <state key="normal" title="Abbrechen">
+                                            <color key="titleColor" systemColor="systemGray4Color"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonTouch:" destination="hYq-RL-9Ok" eventType="touchUpInside" id="GC5-ZH-MKR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn2-mw-O9y">
+                                        <rect key="frame" x="355" y="8" width="43" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Fertig">
+                                            <color key="titleColor" name="primaryColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="confirmButtonTouch:" destination="hYq-RL-9Ok" eventType="touchUpInside" id="RM0-ni-XVw"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hq0-3k-7CH">
+                                        <rect key="frame" x="0.0" y="46" width="414" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hq0-3k-7CH" secondAttribute="bottom" id="Drt-YA-eC4"/>
+                                    <constraint firstItem="hq0-3k-7CH" firstAttribute="leading" secondItem="dwq-Sc-W73" secondAttribute="leading" id="Hqe-VR-snD"/>
+                                    <constraint firstAttribute="trailing" secondItem="hq0-3k-7CH" secondAttribute="trailing" id="IoH-8T-28K"/>
+                                    <constraint firstItem="Rn2-mw-O9y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kNu-xX-xiE" secondAttribute="trailing" constant="8" id="O43-h1-FZ7"/>
+                                    <constraint firstItem="hq0-3k-7CH" firstAttribute="top" secondItem="kNu-xX-xiE" secondAttribute="bottom" constant="8" id="YlE-Oy-UHj"/>
+                                    <constraint firstItem="kNu-xX-xiE" firstAttribute="top" secondItem="dwq-Sc-W73" secondAttribute="top" constant="8" id="ePy-0N-kCz"/>
+                                    <constraint firstItem="kNu-xX-xiE" firstAttribute="leading" secondItem="dwq-Sc-W73" secondAttribute="leading" constant="16" id="egf-z6-opN"/>
+                                    <constraint firstItem="Rn2-mw-O9y" firstAttribute="centerY" secondItem="kNu-xX-xiE" secondAttribute="centerY" id="gpK-Yd-hxZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rn2-mw-O9y" secondAttribute="trailing" constant="16" id="qQK-8Q-Ru4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="meh-hh-9va"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="adJ-yM-7Yv" firstAttribute="leading" secondItem="meh-hh-9va" secondAttribute="leading" id="Ydj-Ey-mBF"/>
+                            <constraint firstItem="meh-hh-9va" firstAttribute="trailing" secondItem="adJ-yM-7Yv" secondAttribute="trailing" id="cCm-C1-jrc"/>
+                            <constraint firstItem="dwq-Sc-W73" firstAttribute="top" secondItem="adJ-yM-7Yv" secondAttribute="bottom" id="gj5-bQ-jtA"/>
+                            <constraint firstItem="meh-hh-9va" firstAttribute="trailing" secondItem="dwq-Sc-W73" secondAttribute="trailing" id="hEv-ea-fDC"/>
+                            <constraint firstItem="meh-hh-9va" firstAttribute="bottom" secondItem="dwq-Sc-W73" secondAttribute="bottom" id="kTx-2k-Cja"/>
+                            <constraint firstItem="adJ-yM-7Yv" firstAttribute="top" secondItem="meh-hh-9va" secondAttribute="top" id="tuV-uc-dyG"/>
+                            <constraint firstItem="dwq-Sc-W73" firstAttribute="leading" secondItem="meh-hh-9va" secondAttribute="leading" id="yXL-LB-l2F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="kNu-xX-xiE" id="QsT-ZK-7pd"/>
+                        <outlet property="confirmButton" destination="Rn2-mw-O9y" id="5l1-ah-kZJ"/>
+                        <outlet property="contentView" destination="dwq-Sc-W73" id="xtc-yd-R3S"/>
+                        <outlet property="dismissView" destination="adJ-yM-7Yv" id="7MH-tn-dAG"/>
+                        <outlet property="pickerView" destination="hq0-3k-7CH" id="pgQ-Y9-j6H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1z-1v-Tfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RAS-Xd-hRg">
+                    <connections>
+                        <action selector="tapOnDismissViewTouch:" destination="hYq-RL-9Ok" id="LEy-PN-e2u"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="796" y="-257"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primaryColor">
+            <color red="0.0039215686274509803" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCAContactPickerViewModel Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/OSCAContactPickerViewModel" class="dashAnchor"></a>
+    <a title="OSCAContactPickerViewModel Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 0.0.9 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OSCAContactPickerViewModel Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactFormFlowCoordinator.html">OSCAContactFormFlowCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactFormViewController.html">OSCAContactFormViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactFormViewModel.html">OSCAContactFormViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactPickerViewController.html">OSCAContactPickerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactPickerViewModel.html">OSCAContactPickerViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactUIDIContainer.html">OSCAContactUIDIContainer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactFormViewModelError.html">OSCAContactFormViewModelError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactFormViewModelState.html">OSCAContactFormViewModelState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactPickerViewModelError.html">OSCAContactPickerViewModelError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactPickerViewModelState.html">OSCAContactPickerViewModelState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OSCAContactFormFlowCoordinatorDependencies.html">OSCAContactFormFlowCoordinatorDependencies</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactFormViewModelActions.html">OSCAContactFormViewModelActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactPickerViewModelActions.html">OSCAContactPickerViewModelActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactUI.html">OSCAContactUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactUIConfig.html">OSCAContactUIConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactUIDependencies.html">OSCAContactUIDependencies</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OSCAContactPickerViewModel</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">OSCAContactPickerViewModel</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/OUTPUT%20Contact%20picker"></a>
+                <a name="//apple_ref/swift/Section/OUTPUT Contact picker" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/OUTPUT%20Contact%20picker"></a>
+                  <h3 class="section-name"><span>OUTPUT Contact picker</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC5stateAA0acdE5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC5stateAA0acdE5StateOvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/OSCAContactPickerViewModelState.html">OSCAContactPickerViewModelState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC19contactFormContactsSay0A00aG7ContactVGvp"></a>
+                    <a name="//apple_ref/swift/Property/contactFormContacts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC19contactFormContactsSay0A00aG7ContactVGvp">contactFormContacts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>pickable subjects, which are linked to contacts in charge internally</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">contactFormContacts</span><span class="p">:</span> <span class="p">[</span><span class="kt">OSCAContactFormContact</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC07contactC14DismissedTitleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/contactPickerDismissedTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC07contactC14DismissedTitleSSvp">contactPickerDismissedTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>localized contact picker dismissed button title</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">contactPickerDismissedTitle</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC07contactC12ConfirmTitleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/contactPickerConfirmTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC07contactC12ConfirmTitleSSvp">contactPickerConfirmTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>localized contact picker confirm button title</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">contactPickerConfirmTitle</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC15alertErrorTitleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/alertErrorTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC15alertErrorTitleSSvp">alertErrorTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>localized contact form alert error info text</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">alertErrorTitle</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC25numberOfComponentsSubjectSivp"></a>
+                    <a name="//apple_ref/swift/Property/numberOfComponentsSubject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC25numberOfComponentsSubjectSivp">numberOfComponentsSubject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>number of components in the contact picker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">numberOfComponentsSubject</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC019selectedContactFormG00A00ahG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/selectedContactFormContact" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC019selectedContactFormG00A00ahG0VSgvp">selectedContactFormContact</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact picker selected item backing</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selectedContactFormContact</span><span class="p">:</span> <span class="kt">OSCAContactFormContact</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC022getSelectedContactFormH00A00aiH0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/getSelectedContactFormContact" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC022getSelectedContactFormH00A00aiH0VSgvp">getSelectedContactFormContact</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">getSelectedContactFormContact</span><span class="p">:</span> <span class="kt">OSCAContactFormContact</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC28numberOfPickablesInComponentSivp"></a>
+                    <a name="//apple_ref/swift/Property/numberOfPickablesInComponent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC28numberOfPickablesInComponentSivp">numberOfPickablesInComponent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>number of pickables in component in the contact picker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">numberOfPickablesInComponent</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC14networkService7actionsAC011OSCANetworkG0AFC_AA0acdE7ActionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(networkService:actions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC14networkService7actionsAC011OSCANetworkG0AFC_AA0acdE7ActionsVtcfc">init(networkService:<wbr>actions:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>public initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span> <span class="nv">networkService</span><span class="p">:</span> <span class="kt">OSCANetworkService</span><span class="p">,</span>
+             <span class="nv">actions</span><span class="p">:</span>        <span class="kt"><a href="../Structs/OSCAContactPickerViewModelActions.html">OSCAContactPickerViewModelActions</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>networkService</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>actions which can be invoked by the view model</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC16titleForPickable2atSSSgSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/titleForPickable(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC16titleForPickable2atSSSgSi_tF">titleForPickable(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>title for pickable at row index in component in the contact picker</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">titleForPickable</span><span class="p">(</span><span class="n">at</span> <span class="nv">rowIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public"></a>
+                <a name="//apple_ref/swift/Section/Public" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public"></a>
+                  <h3 class="section-name"><span>Public</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC8fetchAllyyF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAll()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC8fetchAllyyF">fetchAll()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>public wrapper for fetch all data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchAll</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/INPUT.%20View%20event%20methods%20ContactPicker"></a>
+                <a name="//apple_ref/swift/Section/INPUT. View event methods ContactPicker" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/INPUT.%20View%20event%20methods%20ContactPicker"></a>
+                  <h3 class="section-name"><span>INPUT. View event methods ContactPicker</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC06pickerD7DidLoadyyF"></a>
+                    <a name="//apple_ref/swift/Method/pickerViewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC06pickerD7DidLoadyyF">pickerViewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact picker lifecycle method: picker is loaded to memory
+download all contact form contacts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pickerViewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC06pickerD9DidAppearyyF"></a>
+                    <a name="//apple_ref/swift/Method/pickerViewDidAppear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC06pickerD9DidAppearyyF">pickerViewDidAppear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact picker lifecycle method: picker is visible</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pickerViewDidAppear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC06pickerD13WillDisappearyyF"></a>
+                    <a name="//apple_ref/swift/Method/pickerViewWillDisappear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC06pickerD13WillDisappearyyF">pickerViewWillDisappear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact picker lifecycle method: picker will go invisible</p>
+
+<ul>
+<li>cancel all still running tasks</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pickerViewWillDisappear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC06pickerD12DidDisappearyyF"></a>
+                    <a name="//apple_ref/swift/Method/pickerViewDidDisappear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC06pickerD12DidDisappearyyF">pickerViewDidDisappear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact picker lifecycle method: picker is invisible</p>
+
+<ul>
+<li>remove all still existing tasks</li>
+<li>delete all downloaded data</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pickerViewDidDisappear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC9didSelect2atySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/didSelect(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC9didSelect2atySi_tF">didSelect(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>did select pickable at row index in contact picker</p>
+
+<ul>
+<li>save picked contact</li>
+<li>set view model state to <code>.selected</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didSelect</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC13okButtonTouchyyF"></a>
+                    <a name="//apple_ref/swift/Method/okButtonTouch()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC13okButtonTouchyyF">okButtonTouch()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>confirm button touch</p>
+
+<ul>
+<li>if view model state is not <code>selected</code> =&gt; <code>error</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">okButtonTouch</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC17cancelButtonTouchyyF"></a>
+                    <a name="//apple_ref/swift/Method/cancelButtonTouch()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC17cancelButtonTouchyyF">cancelButtonTouch()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>dismissed button touch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancelButtonTouch</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC16dismissSelectionyyF"></a>
+                    <a name="//apple_ref/swift/Method/dismissSelection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC16dismissSelectionyyF">dismissSelection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>dismiss selection</p>
+
+<ul>
+<li>delete selected item</li>
+<li>view model state to <code>dismissedSelection</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dismissSelection</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A15PickerViewModelC16selectingContactyyF"></a>
+                    <a name="//apple_ref/swift/Method/selectingContact()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A15PickerViewModelC16selectingContactyyF">selectingContact()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>selecting contact</p>
+
+<ul>
+<li>view model state to <code>selecting</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">selectingContact</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Stephan Breidenbach</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

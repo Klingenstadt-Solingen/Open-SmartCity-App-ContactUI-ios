@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Form View Controller-->
+        <scene sceneID="agB-eU-Qdq">
+            <objects>
+                <viewController storyboardIdentifier="OSCAContactFormViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oWL-M0-Fk3" customClass="OSCAContactFormViewController" customModule="OSCAContactUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ap9-zY-uQY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-yV-25r">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="2Uz-LR-qlI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="781"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-ou-u4y">
+                                                <rect key="frame" x="16" y="16" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-1j-zSC">
+                                                <rect key="frame" x="16" y="68.5" width="382" height="196"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ira-l1-mP4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7P-Ua-nth">
+                                                        <rect key="frame" x="0.0" y="28.5" width="382" height="167.5"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Art des Mangels" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BCc-Jf-NhS" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="12" width="358" height="39.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="PJJ-ed-N4C"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Kommentar" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V0x-Pe-rtb">
+                                                                <rect key="frame" x="8" y="59.5" width="366" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="ghc-Un-jOB"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="labelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="BCc-Jf-NhS" firstAttribute="leading" secondItem="K7P-Ua-nth" secondAttribute="leading" constant="12" id="8Wt-6X-XiL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="BCc-Jf-NhS" secondAttribute="trailing" constant="12" id="JHd-O1-P4F"/>
+                                                            <constraint firstAttribute="trailing" secondItem="V0x-Pe-rtb" secondAttribute="trailing" constant="8" id="QjZ-q0-qyp"/>
+                                                            <constraint firstItem="BCc-Jf-NhS" firstAttribute="top" secondItem="K7P-Ua-nth" secondAttribute="top" constant="12" id="Rp6-1k-1s7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="V0x-Pe-rtb" secondAttribute="bottom" constant="8" id="mo0-IV-uHy"/>
+                                                            <constraint firstItem="V0x-Pe-rtb" firstAttribute="top" secondItem="BCc-Jf-NhS" secondAttribute="bottom" constant="8" id="qVm-mh-Nyn"/>
+                                                            <constraint firstItem="V0x-Pe-rtb" firstAttribute="leading" secondItem="K7P-Ua-nth" secondAttribute="leading" constant="8" id="rbm-dV-ptH"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-6o-FdI">
+                                                <rect key="frame" x="16" y="296.5" width="382" height="296.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXb-6n-Tbw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rk2-O6-c6B">
+                                                        <rect key="frame" x="0.0" y="28.5" width="382" height="268"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-VK-5ww" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="12" width="358" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="xnL-3v-3QQ"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-C8-05y" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="54" width="358" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="df3-16-5L8"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oa3-Ya-0Yp" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="96" width="358" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="4fi-le-CgC"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-x9-3Aa" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="138" width="358" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="xDA-Ro-uh7"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDf-De-1La" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="180" width="358" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="Mx2-GU-Wpi"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKd-IM-nZa" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                                <rect key="frame" x="12" y="222" width="358" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                                <connections>
+                                                                    <action selector="textFieldsEditingChanged:" destination="oWL-M0-Fk3" eventType="editingChanged" id="mx3-1A-Huw"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bj8-Hx-fsD">
+                                                <rect key="frame" x="16" y="625" width="382" height="68"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eAj-F7-wO6">
+                                                        <rect key="frame" x="12" y="18.5" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="privacySwitchTouch:" destination="oWL-M0-Fk3" eventType="valueChanged" id="b1J-Un-vyG"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ich stimme den Datenschutzbedingungen zu. Ich stimme den Datenschutzbedingungen zu. Ich stimme den Datenschutzbedingungen zu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag2-S3-Tef">
+                                                        <rect key="frame" x="69" y="16" width="301" height="36"/>
+                                                        <gestureRecognizers/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="zYH-8x-UZv" appends="YES" id="cHi-gb-Xr1"/>
+                                                        </connections>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="12" bottom="16" right="12"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94N-M9-goV">
+                                                <rect key="frame" x="16" y="725" width="382" height="40"/>
+                                                <color key="backgroundColor" name="primaryColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ouk-hU-GB9"/>
+                                                </constraints>
+                                                <state key="normal" title="Mangel melden">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitButtonTouch:" destination="oWL-M0-Fk3" eventType="touchUpInside" id="UAK-bm-Hjt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Uz-LR-qlI" firstAttribute="trailing" secondItem="JcJ-Ki-6PB" secondAttribute="trailing" id="0uX-Qx-nwX"/>
+                                    <constraint firstItem="2Uz-LR-qlI" firstAttribute="width" secondItem="pBW-UF-57z" secondAttribute="width" id="1tL-jc-PUs"/>
+                                    <constraint firstItem="2Uz-LR-qlI" firstAttribute="leading" secondItem="JcJ-Ki-6PB" secondAttribute="leading" id="MMO-fl-ByO"/>
+                                    <constraint firstItem="JcJ-Ki-6PB" firstAttribute="bottom" secondItem="2Uz-LR-qlI" secondAttribute="bottom" id="Ykz-wL-9eW"/>
+                                    <constraint firstItem="2Uz-LR-qlI" firstAttribute="height" secondItem="JcJ-Ki-6PB" secondAttribute="height" id="ZU6-8P-Ac6"/>
+                                    <constraint firstItem="2Uz-LR-qlI" firstAttribute="top" secondItem="JcJ-Ki-6PB" secondAttribute="top" id="aYg-2a-fWc"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JcJ-Ki-6PB"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pBW-UF-57z"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UQ8-mq-488"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="nfn-yV-25r" firstAttribute="leading" secondItem="UQ8-mq-488" secondAttribute="leading" id="Mis-2x-3qm"/>
+                            <constraint firstItem="UQ8-mq-488" firstAttribute="trailing" secondItem="nfn-yV-25r" secondAttribute="trailing" id="fTY-D5-iFH"/>
+                            <constraint firstItem="nfn-yV-25r" firstAttribute="top" secondItem="UQ8-mq-488" secondAttribute="top" id="g21-Xu-lq1"/>
+                            <constraint firstItem="UQ8-mq-488" firstAttribute="bottom" secondItem="nfn-yV-25r" secondAttribute="bottom" id="nsM-YY-e76"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dOZ-fs-6cb" appends="YES" id="cMP-Ch-yhj"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="IZW-C8-05y" id="gwD-mZ-k7D"/>
+                        <outlet property="cityTextField" destination="SWY-x9-3Aa" id="lk4-Y5-fei"/>
+                        <outlet property="contactContainerView" destination="K7P-Ua-nth" id="GDE-zP-rda"/>
+                        <outlet property="contactTitleLabel" destination="ira-l1-mP4" id="fMa-EO-q3H"/>
+                        <outlet property="contactTypeTextField" destination="BCc-Jf-NhS" id="weU-97-lyp"/>
+                        <outlet property="emailTextField" destination="BKd-IM-nZa" id="ppU-8j-oHi"/>
+                        <outlet property="fullNameTextField" destination="xAm-VK-5ww" id="ITM-76-NlB"/>
+                        <outlet property="infoLabel" destination="fwp-ou-u4y" id="kYq-RU-ZXy"/>
+                        <outlet property="noteTextView" destination="V0x-Pe-rtb" id="tXN-Re-2mB"/>
+                        <outlet property="personalDataFieldsStackView" destination="rk2-O6-c6B" id="mhE-Ad-ClR"/>
+                        <outlet property="personalDataStackView" destination="CV6-6o-FdI" id="JRt-9M-0MP"/>
+                        <outlet property="personalDataTitleLabel" destination="HXb-6n-Tbw" id="uwG-Iz-Wcm"/>
+                        <outlet property="phoneTextField" destination="ZDf-De-1La" id="hCl-7L-yun"/>
+                        <outlet property="postalCodeTextField" destination="Oa3-Ya-0Yp" id="tM3-4h-0Ow"/>
+                        <outlet property="privacyLabel" destination="Ag2-S3-Tef" id="Orn-aG-enf"/>
+                        <outlet property="privacyStackView" destination="bj8-Hx-fsD" id="thq-1K-sgh"/>
+                        <outlet property="privacySwitch" destination="eAj-F7-wO6" id="qce-xY-0CL"/>
+                        <outlet property="scrollView" destination="nfn-yV-25r" id="Yau-hu-Cli"/>
+                        <outlet property="submitButton" destination="94N-M9-goV" id="cJd-E7-uBJ"/>
+                        <outlet property="tapOnMainView" destination="dOZ-fs-6cb" id="Gn1-5m-Yor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n83-V4-y1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zYH-8x-UZv">
+                    <connections>
+                        <action selector="tapPrivacyLabel:" destination="oWL-M0-Fk3" id="k8x-B4-6Zc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dOZ-fs-6cb">
+                    <connections>
+                        <action selector="tapOnMainViewTouch:" destination="oWL-M0-Fk3" id="RS9-N1-MNy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="100" y="-254"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="BCc-Jf-NhS">
+            <size key="intrinsicContentSize" width="133.5" height="34"/>
+        </designable>
+        <designable name="BKd-IM-nZa">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="IZW-C8-05y">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="Oa3-Ya-0Yp">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="SWY-x9-3Aa">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="ZDf-De-1La">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="xAm-VK-5ww">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="primaryColor">
+            <color red="0.0039215686274509803" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

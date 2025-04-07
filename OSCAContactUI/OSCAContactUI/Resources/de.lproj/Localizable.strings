@@ -1,0 +1,68 @@
+//
+//  Localizable.strings
+//  OSCAContactUI
+//  language: de
+//  Created by Ömer Kurutay on 29.02.22.
+//
+
+// MARK: Contact Shared
+
+// The alert title for an error
+"contact_alert_title_error" = "Fehler";
+
+// MARK: Contact Form
+
+// The screen title
+"contact_form_screen_title" = "Kontakt";
+// The contact form info text
+"contact_form_info_text" = "Hast Du Hinweise oder Fragen zur App? Klappt damit irgendetwas nicht oder hast Du sogar neue Ideen?\nAber auch allgemeine Fragen, Beschwerden oder Hinweise interessieren uns! Dann nutze doch einfach das folgende Kontaktformular und teile uns Dein Anliegen mit! Wir melden uns dann bei Dir!";
+// The alert message for an entry error
+"contact_alert_message_error" = "Bitte prüfe deine Eingaben.";
+// The alert action title to cancel
+"contact_alert_title_cancel" = "Abbrechen";
+// The alert action title to confirm
+"contact_alert_title_confirm" = "OK";
+// The alert action title to show success
+"contact_alert_title_success" = "Vielen Dank";
+// The alert action message to show success
+"contact_alert_message_success" = "Deine Meldung ist bei uns eingegangen und wir werden uns schnellstmöglich darum kümmern.";
+// The title for the contact form fields
+"contact_contact_title" = "Anliegen";
+// The title for the contact types
+"contact_contact_type_title" = "Art der Anfrage";
+// The consent to the privacy policy
+"contact_privacy_policy_consent" = "Ich stimme den Datenschutzbestimmungen zu.";
+// The link in the privacy policy consent
+"contact_privacy_policy_consent_link" = "Datenschutzbestimmungen";
+// The note placeholder
+"contact_note_placeholder" = "Kommentar";
+// The title for the personal data fields
+"contact_personal_data_title" = "Persönliche Daten";
+// The placeholder for the full name field
+"contact_placeholder_full_name" = "Dein vollständiger Name";
+// The placeholder for the address field
+"contact_placeholder_address" = "Deine Adresse";
+// The placeholder for the postal code field
+"contact_placeholder_postal_code" = "Deine Postleitzahl";
+// The placeholder for the city field
+"contact_placeholder_city" = "Deine Stadt";
+// The placeholder for the phone number field
+"contact_placeholder_phone" = "Deine Telefonnummer";
+// The placeholder for the e-mail address field
+"contact_placeholder_email" = "Deine E-Mail-Adresse";
+// The error message for invalid inputs in text fields
+"contact_input_message_error" = "Ungültige Eingabe";
+// The title for the submit button
+"contact_submit_title" = "Absenden";
+
+// MARK: Contact Picker
+
+// The title for the picker view cancel button
+"contact_picker_title_cancel" = "Abbrechen";
+// The title for the picker view confirm button
+"contact_picker_title_confirm" = "Auswählen";
+
+// MARK: Contact Privacy Policy
+
+// The screen title for privacy policy
+"contact_privacy_policy_screen_title" = "Datenschutz";

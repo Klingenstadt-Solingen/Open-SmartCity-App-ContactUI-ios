@@ -1,0 +1,68 @@
+//
+//  Localizable.strings
+//  OSCAContactUI
+//  language: en
+//  Created by Ömer Kurutay on 29.02.22.
+//
+
+// MARK: Shared
+
+// The alert title for an error
+"contact_alert_title_error" = "Error";
+
+// MARK: Contact Form
+
+// The screen title
+"contact_form_screen_title" = "Contact";
+// The contact form info text
+"contact_form_info_text" = "Do you have any comments or questions about the app? Is something not working or do you even have new ideas?\nBut we are also interested in general questions, complaints or tips! Then simply use the following contact form and let us know what you are looking for! We will then get in touch with you!";
+// The alert message for an entry error
+"contact_alert_message_error" = "Please check your entries.";
+// The alert action title to cancel
+"contact_alert_title_cancel" = "Cancel";
+// The alert action title to confirm
+"contact_alert_title_confirm" = "OK";
+// The alert action title to show success
+"contact_alert_title_success" = "Thank you";
+// The alert action message to show success
+"contact_alert_message_success" = "We have received your message and will take care of it as soon as possible.";
+// The title for the contact form fields
+"contact_contact_title" = "Issue";
+// The title for the contact types
+"contact_contact_type_title" = "Type of request";
+// The consent to the privacy policy
+"contact_privacy_policy_consent" = "I agree to the privacy policy.";
+// The link in the privacy policy consent
+"contact_privacy_policy_consent_link" = "privacy policy";
+// The note placeholder
+"contact_note_placeholder" = "Note";
+// The title for the personal data fields
+"contact_personal_data_title" = "Personal data";
+// The placeholder for the full name field
+"contact_placeholder_full_name" = "Your full name";
+// The placeholder for the address field
+"contact_placeholder_address" = "Your address";
+// The placeholder for the postal code field
+"contact_placeholder_postal_code" = "Your postal code";
+// The placeholder for the city field
+"contact_placeholder_city" = "Your city";
+// The placeholder for the phone number field
+"contact_placeholder_phone" = "Your phone number";
+// The placeholder for the e-mail address field
+"contact_placeholder_email" = "Your e-mail address";
+// The error message for invalid inputs in text fields
+"contact_input_message_error" = "Invalid input";
+// The title for the submit button
+"contact_submit_title" = "Submit";
+
+// MARK: Contact Picker
+
+// The title for the picker view cancel button
+"contact_picker_title_cancel" = "Cancel";
+// The title for the picker view confirm button
+"contact_picker_title_confirm" = "Select";
+
+// MARK: Contact Privacy Policy
+
+// The screen title for privacy policy
+"contact_privacy_policy_screen_title" = "Privacy policy";

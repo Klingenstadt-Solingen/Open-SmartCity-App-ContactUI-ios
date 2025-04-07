@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Privacy Policy View Controller-->
+        <scene sceneID="rf8-SO-wZA">
+            <objects>
+                <viewController storyboardIdentifier="OSCAContactPrivacyPolicyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZp-4Q-rRv" customClass="OSCAContactPrivacyPolicyViewController" customModule="OSCAContactUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ryP-BM-QJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kW0-Fh-cRD">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUJ-md-Vfb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="332"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zei-3d-why">
+                                                <rect key="frame" x="16" y="16" width="382" height="300"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="5js-Ou-2JY"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="zei-3d-why" firstAttribute="leading" secondItem="OUJ-md-Vfb" secondAttribute="leading" constant="16" id="T6X-2A-vZ4"/>
+                                            <constraint firstAttribute="bottom" secondItem="zei-3d-why" secondAttribute="bottom" constant="16" id="TlM-XD-BPu"/>
+                                            <constraint firstAttribute="trailing" secondItem="zei-3d-why" secondAttribute="trailing" constant="16" id="ioA-bc-cSq"/>
+                                            <constraint firstItem="zei-3d-why" firstAttribute="top" secondItem="OUJ-md-Vfb" secondAttribute="top" constant="16" id="qFS-PC-FuP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OUJ-md-Vfb" firstAttribute="leading" secondItem="kW0-Fh-cRD" secondAttribute="leading" id="7kj-Xg-Txc"/>
+                                    <constraint firstItem="OUJ-md-Vfb" firstAttribute="top" secondItem="kW0-Fh-cRD" secondAttribute="top" id="Gwl-SR-hg5"/>
+                                    <constraint firstAttribute="bottom" secondItem="OUJ-md-Vfb" secondAttribute="bottom" id="J8b-m2-0oy"/>
+                                    <constraint firstAttribute="trailing" secondItem="OUJ-md-Vfb" secondAttribute="trailing" id="tJ9-SP-xhF"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OyK-OG-yGg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Kwo-qE-1vT"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Yh-1p-cB7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Yh-1p-cB7" firstAttribute="trailing" secondItem="kW0-Fh-cRD" secondAttribute="trailing" id="3ns-OM-HQT"/>
+                            <constraint firstItem="kW0-Fh-cRD" firstAttribute="top" secondItem="8Yh-1p-cB7" secondAttribute="top" id="4f0-qG-e1c"/>
+                            <constraint firstItem="8Yh-1p-cB7" firstAttribute="bottom" secondItem="kW0-Fh-cRD" secondAttribute="bottom" id="50S-Jk-lEv"/>
+                            <constraint firstItem="kW0-Fh-cRD" firstAttribute="leading" secondItem="8Yh-1p-cB7" secondAttribute="leading" id="7YD-RN-5TQ"/>
+                            <constraint firstItem="OUJ-md-Vfb" firstAttribute="width" secondItem="ryP-BM-QJ4" secondAttribute="width" id="aOT-Sl-VS5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="privacyTextContainer" destination="OUJ-md-Vfb" id="5JK-jR-VCg"/>
+                        <outlet property="privacyTextView" destination="zei-3d-why" id="rHU-ds-5bV"/>
+                        <outlet property="textViewHeight" destination="5js-Ou-2JY" id="bKb-JY-AjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4e-1j-Qeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

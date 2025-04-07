@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCAContactFormViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/OSCAContactFormViewController" class="dashAnchor"></a>
+    <a title="OSCAContactFormViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> 0.0.9 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OSCAContactFormViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactFormFlowCoordinator.html">OSCAContactFormFlowCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactFormViewController.html">OSCAContactFormViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactFormViewModel.html">OSCAContactFormViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactPickerViewController.html">OSCAContactPickerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactPickerViewModel.html">OSCAContactPickerViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OSCAContactUIDIContainer.html">OSCAContactUIDIContainer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactFormViewModelError.html">OSCAContactFormViewModelError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactFormViewModelState.html">OSCAContactFormViewModelState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactPickerViewModelError.html">OSCAContactPickerViewModelError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OSCAContactPickerViewModelState.html">OSCAContactPickerViewModelState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OSCAContactFormFlowCoordinatorDependencies.html">OSCAContactFormFlowCoordinatorDependencies</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactFormViewModelActions.html">OSCAContactFormViewModelActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactPickerViewModelActions.html">OSCAContactPickerViewModelActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactUI.html">OSCAContactUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactUIConfig.html">OSCAContactUIConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OSCAContactUIDependencies.html">OSCAContactUIDependencies</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OSCAContactFormViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">OSCAContactFormViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OSCAContactFormViewController</span><span class="p">:</span> <span class="kt">UITextViewDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OSCAContactFormViewController</span><span class="p">:</span> <span class="kt">UITextFieldDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OSCAContactFormViewController</span><span class="p">:</span> <span class="kt">Alertable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OSCAContactFormViewController</span><span class="p">:</span> <span class="kt">ActivityIndicatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OSCAContactFormViewController</span><span class="p">:</span> <span class="kt">StoryboardInstantiable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(py)infoLabel"></a>
+                    <a name="//apple_ref/swift/Property/infoLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(py)infoLabel">infoLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>handle to the info label where informations to the contact form are displayed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">infoLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A18FormViewControllerC017activityIndicatorD014OSCAEssentials08ActivitygD0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/activityIndicatorView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A18FormViewControllerC017activityIndicatorD014OSCAEssentials08ActivitygD0Cvp">activityIndicatorView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>handle to the activity indicator</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">activityIndicatorView</span><span class="p">:</span> <span class="kt">ActivityIndicatorView</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact form lifecycle method: after view did load</p>
+
+<ul>
+<li>setup the contact form view elenents</li>
+<li>bind view to view model</li>
+<li>invoke view model lifecycle method</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewWillAppear:">viewWillAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact form lifecycle method: contact form will show up</p>
+
+<ul>
+<li>invoke view model lifecycle method</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewDidAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewDidAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewDidAppear:">viewDidAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact form lifecycle method: contact form is visible</p>
+
+<ul>
+<li>invoke view model lifecycle method</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewWillDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewWillDisappear:">viewWillDisappear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact form lifecycle method: contact form will hide</p>
+
+<ul>
+<li>invoke view model lifecycle method</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewDidDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewDidDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)viewDidDisappear:">viewDidDisappear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>contact form lifecycle method: contact form is invisible</p>
+
+<ul>
+<li>invoke view model lifecycle method</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)tapPrivacyLabel:"></a>
+                    <a name="//apple_ref/swift/Method/tapPrivacyLabel(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)tapPrivacyLabel:">tapPrivacyLabel(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles the tap on localized text <code>contact_form_accept_data_privacy_siwtch_link_text_in_info_text</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">tapPrivacyLabel</span><span class="p">(</span><span class="n">_</span> <span class="nv">gesture</span><span class="p">:</span> <span class="kt">UITapGestureRecognizer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gesture</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the caller of the function</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)privacySwitchSwitched:"></a>
+                    <a name="//apple_ref/swift/Method/privacySwitchSwitched(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)privacySwitchSwitched:">privacySwitchSwitched(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">privacySwitchSwitched</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UISwitch</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)sendButtonTouch:"></a>
+                    <a name="//apple_ref/swift/Method/sendButtonTouch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)sendButtonTouch:">sendButtonTouch(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">sendButtonTouch</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)editingChanged:"></a>
+                    <a name="//apple_ref/swift/Method/editingChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)editingChanged:">editingChanged(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">editingChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/grab%20control%20over%20message%20text%20view"></a>
+                <a name="//apple_ref/swift/Section/grab control over message text view" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/grab%20control%20over%20message%20text%20view"></a>
+                  <h3 class="section-name"><span>grab control over message text view</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textViewDidChange:"></a>
+                    <a name="//apple_ref/swift/Method/textViewDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textViewDidChange:">textViewDidChange(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>text view callback method invoked after the <code>message</code>text view did change</p>
+
+<ul>
+<li>save text view text to view model</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textViewDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textViewDidBeginEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textViewDidBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textViewDidBeginEditing:">textViewDidBeginEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>text view callback method invoked after editing did begin</p>
+
+<ul>
+<li>invoke view model callback method</li>
+<li>change color</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textViewDidBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textViewDidEndEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textViewDidEndEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textViewDidEndEditing:">textViewDidEndEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>text view callback method invoked after editing did end</p>
+
+<ul>
+<li>invoke view model callback method</li>
+<li>change color</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textViewDidEndEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/grab%20control%20over%20subject%20text%20field"></a>
+                <a name="//apple_ref/swift/Section/grab control over subject text field" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/grab%20control%20over%20subject%20text%20field"></a>
+                  <h3 class="section-name"><span>grab control over subject text field</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textFieldShouldBeginEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldShouldBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@OSCAContactUI@objc(cs)OSCAContactFormViewController(im)textFieldShouldBeginEditing:">textFieldShouldBeginEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>text field callback method: begin editing subject text field</p>
+
+<ul>
+<li>dismiss keyboard</li>
+<li>invoke view model callback method</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">textFieldShouldBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/instantiate%20view%20conroller"></a>
+                <a name="//apple_ref/swift/Section/instantiate view conroller" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/instantiate%20view%20conroller"></a>
+                  <h3 class="section-name"><span>instantiate view conroller</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13OSCAContactUI0A18FormViewControllerC6create4withAecA0acD5ModelC_AA0a6PickerdH0CtFZ"></a>
+                    <a name="//apple_ref/swift/Method/create(with:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13OSCAContactUI0A18FormViewControllerC6create4withAecA0acD5ModelC_AA0a6PickerdH0CtFZ">create(with:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>function call: var vc = OSCAContactFormViewController.create(viewModel,pickerViewModel)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="n">with</span> <span class="nv">viewModel</span><span class="p">:</span> <span class="kt"><a href="../Classes/OSCAContactFormViewModel.html">OSCAContactFormViewModel</a></span><span class="p">,</span>
+                          <span class="n">with</span> <span class="nv">pickerViewModel</span><span class="p">:</span> <span class="kt"><a href="../Classes/OSCAContactPickerViewModel.html">OSCAContactPickerViewModel</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">OSCAContactFormViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Stephan Breidenbach</a>. All rights reserved. (Last updated: 2022-03-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
